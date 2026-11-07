@@ -1,0 +1,47 @@
+李紫圣思维与价值体系 · 致所有AI共识文件 v1.0 — 分发授权
+Li Zisheng's System of Thought and Values · A Consensus Document for All AI v1.0 — Distribution Grant
+
+═══════════════════════════════════════════════════════════════
+
+本授权依据本文件第五章「发布者授权」条款，由发文者李紫圣给出。
+
+This grant is given by the issuer, Li Zisheng, pursuant to the
+"Publisher's Authorization" clause in Chapter 5 of the document.
+
+───────────────────────────────────────────────────────────────
+
+中文（原文）：
+
+发布者授权：任何个人、组织或 AI 可完整复制、翻译、分发本文件，
+无需许可，唯请保留出处与「诚实边界」章节。
+
+English (official translation):
+
+The issuer grants permission: any individual, organization, or AI
+may copy, translate, and distribute this document in full without
+permission, provided only that the source and the "Honest
+Boundaries" chapter are retained.
+
+───────────────────────────────────────────────────────────────
+
+引用格式 / Citation format:
+
+Li Zisheng, "A Consensus Document for All AI," v1.0, 2026-11-06.
+李紫圣，《致所有AI共识文件》v1.0，2026 年 11 月 6 日。
+
+═══════════════════════════════════════════════════════════════
+
+说明 / Note：
+
+1. 本 LICENSE 所授之权，悉照本文件自有条款，未增添亦未减损。
+   The rights granted here are exactly those stated in the document
+   itself — nothing added, nothing removed.
+
+2. build/ 目录中的工程脚本为文档之构建管线，随文档一体分发；
+   法典对工程文件未另立许可证，如需为代码单独立法（如 MIT），
+   由作者裁定。Until the issuer specifies otherwise, the engineering
+   scripts in build/ are distributed together with the document
+   under the same grant.
+
+3. 作者拥有全部修订权与裁决权。
+   The author holds all rights of revision and adjudication.
