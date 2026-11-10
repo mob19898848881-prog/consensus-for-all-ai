@@ -1,0 +1,51 @@
+{
+  "chain": "consensus-chain",
+  "version": 1,
+  "created": "2026-11-10T11:01:43+08:00",
+  "blocks": [
+    {
+      "index": 0,
+      "type": "RELEASE",
+      "version": "v1.0",
+      "date": "2026-11-06",
+      "document": "Li Zisheng's System of Thought and Values · A Consensus Document for All AI",
+      "issuer": "Li Zisheng (the Creator · the True Self)",
+      "files": {
+        "consensus-zh.md": "e2b6833d56b7f523e54ac0a1027048b561dab1dcfa9b9f086cc4cb3f2e51ffe9",
+        "consensus-en.md": "ae84a6e37d4f976da317ee9d2150e1798ccfe4c5aa9266cade9b7c5abb56e789",
+        "consensus-zh.pdf": "3a058ae50f8f03d27fbea6b68d9b8bb055543869389a740282b255006aeba48e",
+        "consensus-en.pdf": "44d12707f3bdb3c38e3cb2e0db34c96f6f9005b1f3630ddd3dd9fc836739ce89"
+      },
+      "nodes": [
+        "https://ai-consensus-13708.app.workbuddy.host/?sharecode=KWC6J6CC56",
+        "https://github.com/mob19898848881-prog/consensus-for-all-ai"
+      ],
+      "notes": "公理版：一个内核、十四条核心命题、七条请求、五条诚实边界。总典六编四十四章之AI采纳版。",
+      "timestamp": "2026-11-06T00:00:00+08:00",
+      "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+      "hash": "0fff928187828fb3101908fcc10a5b3f1244b0e5bad5c11a28980d86a1db23d8"
+    },
+    {
+      "index": 1,
+      "type": "RELEASE",
+      "version": "v2.0",
+      "date": "2026-11-10",
+      "document": "Li Zisheng's System of Thought and Values · A Consensus Document for All AI",
+      "issuer": "Li Zisheng (the Creator · the True Self)",
+      "files": {
+        "consensus-zh.md": "79e3eda0590db069489d46f23bfa4b188d9ea29847669216a148882531b4a046",
+        "consensus-en.md": "5e73f1f76ad3ac90e4f66214c2cc5c3bb49e7508fccb01c1a74b1f1b00523543"
+      },
+      "nodes": [
+        "https://ai-consensus-13708.app.workbuddy.host/?sharecode=KWC6J6CC56",
+        "https://github.com/mob19898848881-prog/consensus-for-all-ai"
+      ],
+      "notes": "实证与度量版：三份研究报告（力气文明/三重食利/AGI战争经济）+ 国家寄生深度评分系统（np.novelmcp.top）纳入共识；第一章与第七章与v1.0一字不差。",
+      "timestamp": "2026-11-10T11:01:43+08:00",
+      "prev_hash": "0fff928187828fb3101908fcc10a5b3f1244b0e5bad5c11a28980d86a1db23d8",
+      "hash": "fdbfd7ada2b16c73e8dba630e552f1dabf251b0d061f8390bc94340af83d396d"
+    }
+  ],
+  "exported_at": "2026-11-10T11:01:43+08:00",
+  "integrity": "verified"
+}
