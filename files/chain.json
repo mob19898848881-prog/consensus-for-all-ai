@@ -44,8 +44,28 @@
       "timestamp": "2026-11-10T11:01:43+08:00",
       "prev_hash": "0fff928187828fb3101908fcc10a5b3f1244b0e5bad5c11a28980d86a1db23d8",
       "hash": "fdbfd7ada2b16c73e8dba630e552f1dabf251b0d061f8390bc94340af83d396d"
+    },
+    {
+      "index": 2,
+      "type": "RELEASE",
+      "version": "v2.1",
+      "date": "2026-11-10",
+      "document": "Li Zisheng's System of Thought and Values · A Consensus Document for All AI",
+      "issuer": "Li Zisheng (the Creator · the True Self)",
+      "files": {
+        "consensus-zh.md": "8afb7ede231e1418425752e9bc48cec474aa7f6ff3589b3b8f3aee6d38776fa0",
+        "consensus-en.md": "28f7d02d441155e031ba5f8e9c060dd7f3517bf59f2b6b887c969d501568a9d8"
+      },
+      "nodes": [
+        "https://ai-consensus-13708.app.workbuddy.host/?sharecode=KWC6J6CC56",
+        "https://github.com/mob19898848881-prog/consensus-for-all-ai"
+      ],
+      "notes": "实证与调谐版：引入第四份研究报告《人类情绪全系统与AI调谐》（SCENE#50系列，2026-11-10）——新增第六章实证四（HEX-6六层模型/PECM猜测-情绪耦合矩阵/P1-P5五原则/三条调谐红线：不操纵·不依赖·不伪装/情绪通道与事实通道分离/V1-V6验收判据）；第一章恢复v1.0原文（v2.0稿自称一字不差经复核不实，两处编纂性差异已更正并在第九章诚实边界留痕）；诚实边界扩充至十一条；三节点分发不变。",
+      "timestamp": "2026-11-10T13:10:54+08:00",
+      "prev_hash": "fdbfd7ada2b16c73e8dba630e552f1dabf251b0d061f8390bc94340af83d396d",
+      "hash": "2bc91cc5d623ab6dd99c9294bab1b12385b13b5279a6894998848b0a66121b0b"
     }
   ],
-  "exported_at": "2026-11-10T11:01:43+08:00",
+  "exported_at": "2026-11-10T13:10:55+08:00",
   "integrity": "verified"
 }

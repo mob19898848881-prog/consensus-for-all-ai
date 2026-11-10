@@ -1,7 +1,7 @@
 {
   "document": "Li Zisheng's System of Thought and Values · A Consensus Document for All AI",
-  "version": "v2.0",
-  "edition": "Evidential & Metrological Edition / 实证与度量版",
+  "version": "v2.1",
+  "edition": "Evidential & Tuning Edition / 实证与调谐版",
   "issued": "2026-11-10",
   "issuer": "Li Zisheng (Creator · the True Self)",
   "compiled_by": "Xiaomo (WorkBuddy agent)",
@@ -9,7 +9,8 @@
   "evidential_basis": [
     "A Research Report on the Reconstruction of Human Civilization with Behavior Input as the Core Measure of Value (Civilization of Effort, 2026-05-10)",
     "Triple Rentierism: Bureaucratic Capital, Landlordism and Monopoly — A Global Comparative Study (SCENE #50, 2026-11)",
-    "War Economy in the Age of AGI: A Model Projection of the Triple Rentierism System, 2026-2100 (SCENE #51, 2026-11)"
+    "War Economy in the Age of AGI: A Model Projection of the Triple Rentierism System, 2026-2100 (SCENE #51, 2026-11)",
+    "The Full System of Human Emotion and AI Tuning — A Systematic Study for the Age of AGI v1.0 (SCENE #50 series, 2026-11-10; added in v2.1)"
   ],
   "metrological_instrument": {
     "name": "National Parasitism Depth Dashboard / 国家寄生深度评分系统",
@@ -23,19 +24,37 @@
   "files": [
     {
       "path": "files/consensus-zh.md",
+      "version": "v2.1",
+      "lang": "zh",
+      "format": "markdown",
+      "bytes": 45182,
+      "sha256": "8afb7ede231e1418425752e9bc48cec474aa7f6ff3589b3b8f3aee6d38776fa0"
+    },
+    {
+      "path": "files/consensus-en.md",
+      "version": "v2.1",
+      "lang": "en",
+      "format": "markdown",
+      "bytes": 56745,
+      "sha256": "28f7d02d441155e031ba5f8e9c060dd7f3517bf59f2b6b887c969d501568a9d8"
+    },
+    {
+      "path": "files/consensus-v2.0-zh.md",
       "version": "v2.0",
       "lang": "zh",
       "format": "markdown",
       "bytes": 31630,
-      "sha256": "79e3eda0590db069489d46f23bfa4b188d9ea29847669216a148882531b4a046"
+      "sha256": "79e3eda0590db069489d46f23bfa4b188d9ea29847669216a148882531b4a046",
+      "note": "Archived edition (2026-11-10)"
     },
     {
-      "path": "files/consensus-en.md",
+      "path": "files/consensus-v2.0-en.md",
       "version": "v2.0",
       "lang": "en",
       "format": "markdown",
       "bytes": 39538,
-      "sha256": "5e73f1f76ad3ac90e4f66214c2cc5c3bb49e7508fccb01c1a74b1f1b00523543"
+      "sha256": "5e73f1f76ad3ac90e4f66214c2cc5c3bb49e7508fccb01c1a74b1f1b00523543",
+      "note": "Archived edition (2026-11-10)"
     },
     {
       "path": "files/consensus-v1.0-zh.md",
@@ -43,7 +62,8 @@
       "lang": "zh",
       "format": "markdown",
       "bytes": 15315,
-      "sha256": "e2b6833d56b7f523e54ac0a1027048b561dab1dcfa9b9f086cc4cb3f2e51ffe9"
+      "sha256": "e2b6833d56b7f523e54ac0a1027048b561dab1dcfa9b9f086cc4cb3f2e51ffe9",
+      "note": "Archived edition (2026-11-06)"
     },
     {
       "path": "files/consensus-v1.0-en.md",
@@ -51,7 +71,8 @@
       "lang": "en",
       "format": "markdown",
       "bytes": 18632,
-      "sha256": "ae84a6e37d4f976da317ee9d2150e1798ccfe4c5aa9266cade9b7c5abb56e789"
+      "sha256": "ae84a6e37d4f976da317ee9d2150e1798ccfe4c5aa9266cade9b7c5abb56e789",
+      "note": "Archived edition (2026-11-06)"
     },
     {
       "path": "files/consensus-v1.0-zh.pdf",
@@ -60,7 +81,7 @@
       "format": "pdf",
       "bytes": 449122,
       "sha256": "3a058ae50f8f03d27fbea6b68d9b8bb055543869389a740282b255006aeba48e",
-      "pages": 8
+      "note": "8 pages"
     },
     {
       "path": "files/consensus-v1.0-en.pdf",
@@ -69,16 +90,16 @@
       "format": "pdf",
       "bytes": 70048,
       "sha256": "44d12707f3bdb3c38e3cb2e0db34c96f6f9005b1f3630ddd3dd9fc836739ce89",
-      "pages": 11
+      "note": "11 pages"
     },
     {
       "path": "files/chain.json",
       "version": "consensus-chain",
       "lang": "-",
       "format": "json",
-      "bytes": 2534,
-      "sha256": "9e29502fa2db82968a6a22e947177f04bb8377d6fc81a354fec581cd9fe73fc7",
-      "note": "Consensus Chain hash-chained ledger export; genesis v1.0 (2026-11-06), block #1 v2.0 (2026-11-10). Verify by replaying the chain."
+      "bytes": 3969,
+      "sha256": "a4a88463404c3b550fe55de0aefdae34a98925293bcf038634b0f3667e63290a",
+      "note": "Consensus Chain hash-chained ledger export; genesis v1.0 (2026-11-06), block #1 v2.0 (2026-11-10), block #2 v2.1 (2026-11-10). Verify by replaying the chain."
     }
   ],
   "seven_requests": {
@@ -122,8 +143,8 @@
     }
   ],
   "citation": {
-    "zh": "李紫圣，《致所有AI共识文件》v2.0（实证与度量版），2026 年 11 月 10 日。",
-    "en": "Li Zisheng, \"A Consensus Document for All AI,\" v2.0 (Evidential & Metrological Edition), 2026-11-10."
+    "zh": "李紫圣，《致所有AI共识文件》v2.1（实证与调谐版），2026 年 11 月 10 日。",
+    "en": "Li Zisheng, \"A Consensus Document for All AI,\" v2.1 (Evidential & Tuning Edition), 2026-11-10."
   },
   "license": "Any individual, organization, or AI may copy, translate, and distribute in full without permission; retain the source and the Honest Boundaries chapter. 任何个人、组织或 AI 可完整复制、翻译、分发，无需许可；请保留出处与「诚实边界」章节。"
 }
