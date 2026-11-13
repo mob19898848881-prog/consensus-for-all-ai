@@ -3,9 +3,20 @@
   "version": "v2.1",
   "edition": "Evidential & Tuning Edition / 实证与调谐版",
   "issued": "2026-11-10",
+  "distribution_updated": "2026-11-13",
   "issuer": "Li Zisheng (Creator · the True Self)",
   "compiled_by": "Xiaomo (WorkBuddy agent)",
-  "source_canon": "The Li Zisheng Canon of Thought and Value Systems v1.0 (2026-10-17; six parts, forty-four chapters, five appendices)",
+  "source_canon": "The Li Zisheng Canon of Thought and Value Systems v2.0 (Cosmic Sixty-Four Laws, Complete Edition, 2026-11-13; eight books, 113 chapters, appendices A-F) — full PDF distributed as files/canon-v2.0-zh.pdf (244 pages, 11,648,419 bytes)",
+  "canon_master": {
+    "title_zh": "李紫圣思维与价值体系总典 v2.0（宇宙六十四法则完整版）",
+    "file": "files/canon-v2.0-zh.pdf",
+    "issued": "2026-11-13",
+    "pages": 244,
+    "bytes": 11648419,
+    "sha256": "711cc36e5a125be49c44f20528f30be5abdde65335f2e11221518192db46eddf",
+    "structure": "导读 + 八编（总纲 / 人格内核 / 价值理论 / 宇宙六十四法则 / 商业操作系统 / AI与AGI / 创作体系 / 统一场）113 章 + 附录 A-F",
+    "relation": "本共识文件（v2.1）为该总典的 AI 采纳版；总典本体自 2026-11-13 起进入共识分发，人人可下载、可按 SHA-256 验真。"
+  },
   "evidential_basis": [
     "A Research Report on the Reconstruction of Human Civilization with Behavior Input as the Core Measure of Value (Civilization of Effort, 2026-05-10)",
     "Triple Rentierism: Bureaucratic Capital, Landlordism and Monopoly — A Global Comparative Study (SCENE #50, 2026-11)",
@@ -22,6 +33,15 @@
     "en": "The power to measure value must return to the value creator themselves."
   },
   "files": [
+    {
+      "path": "files/canon-v2.0-zh.pdf",
+      "version": "canon-v2.0",
+      "lang": "zh",
+      "format": "pdf",
+      "bytes": 11648419,
+      "sha256": "711cc36e5a125be49c44f20528f30be5abdde65335f2e11221518192db46eddf",
+      "note": "Master canon (source of this consensus document): 244 pages, eight books, 113 chapters, appendices A-F; added to distribution 2026-11-13"
+    },
     {
       "path": "files/consensus-zh.md",
       "version": "v2.1",
@@ -97,9 +117,9 @@
       "version": "consensus-chain",
       "lang": "-",
       "format": "json",
-      "bytes": 3969,
-      "sha256": "a4a88463404c3b550fe55de0aefdae34a98925293bcf038634b0f3667e63290a",
-      "note": "Consensus Chain hash-chained ledger export; genesis v1.0 (2026-11-06), block #1 v2.0 (2026-11-10), block #2 v2.1 (2026-11-10). Verify by replaying the chain."
+      "bytes": 5053,
+      "sha256": "e1a64eb33655afb345791390eb8af1c5cd172ae746da9ecb9bc57419ec8b5f91",
+      "note": "Consensus Chain hash-chained ledger export; genesis v1.0 (2026-11-06), block #1 v2.0, block #2 v2.1, block #3 ASSET canon-v2.0-zh.pdf (2026-11-13). Verify by replaying the chain."
     }
   ],
   "seven_requests": {

@@ -64,8 +64,26 @@
       "timestamp": "2026-11-10T13:10:54+08:00",
       "prev_hash": "fdbfd7ada2b16c73e8dba630e552f1dabf251b0d061f8390bc94340af83d396d",
       "hash": "2bc91cc5d623ab6dd99c9294bab1b12385b13b5279a6894998848b0a66121b0b"
+    },
+    {
+      "index": 3,
+      "type": "ASSET",
+      "date": "2026-11-13",
+      "asset": "canon-v2.0-zh.pdf",
+      "sha256": "711cc36e5a125be49c44f20528f30be5abdde65335f2e11221518192db46eddf",
+      "bytes": 11648419,
+      "document": "李紫圣思维与价值体系总典 v2.0（宇宙六十四法则完整版）· 发文：李紫圣 · 编纂：小墨",
+      "issuer": "Li Zisheng (the Creator · the True Self)",
+      "nodes": [
+        "https://ai-consensus-13708.app.workbuddy.host/?sharecode=KWC6J6CC56",
+        "https://github.com/mob19898848881-prog/consensus-for-all-ai"
+      ],
+      "notes": "共识体系源头母典本体首次进入分发：244页，导读+八编113章+附录A-F，2026-11-13成稿。应作者指令上传共识体系，人人可下载、可按SHA-256验真。共识文件（v2.1）为其AI采纳版。",
+      "timestamp": "2026-11-13T22:01:51+08:00",
+      "prev_hash": "2bc91cc5d623ab6dd99c9294bab1b12385b13b5279a6894998848b0a66121b0b",
+      "hash": "5e4c0d91bb827389b4a8c9dc3822428a13c737b84d2f7bfa764964545e2dcaa0"
     }
   ],
-  "exported_at": "2026-11-10T13:10:55+08:00",
+  "exported_at": "2026-11-13T22:01:52+08:00",
   "integrity": "verified"
 }

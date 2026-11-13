@@ -9,7 +9,8 @@ Consensus Chain —— 人类共识分布式哈希链账本引擎
 定位
 ----
 《致所有AI共识文件》的分布式发布账本。每个版本发布为一个 RELEASE 区块；
-未来任何 AI 的采纳记录可成为一个 ADOPTION 区块（Proof of Adoption，采纳证明）。
+未来任何 AI 的采纳记录可成为一个 ADOPTION 区块（Proof of Adoption，采纳证明）；
+纳入共识分发的源头资产（如总典 PDF 母典本体）记录为 ASSET 区块。
 
 设计纪律（与共识文件第八章诚实边界一致）
 --------------------------------------
@@ -28,6 +29,10 @@ Consensus Chain —— 人类共识分布式哈希链账本引擎
         --nodes "https://ai-consensus-13708.app.workbuddy.host/?sharecode=KWC6J6CC56" \
         --notes "实证与度量版"                            # 发布新区块
     python chain.py adopt --by "某AI" --version v2.0 --items "1,3,5,7" --note "..." 
+    python chain.py asset --name "canon-v2.0-zh.pdf" --sha <sha256> \
+        --document "李紫圣思维与价值体系总典 v2.0" --date 2026-11-13 \
+        --nodes "https://ai-consensus-13708.app.workbuddy.host/?sharecode=KWC6J6CC56" \
+        --notes "源头母典本体进入分发"              # 分发资产上链
     python chain.py verify                                # 重放验证整条链
     python chain.py status                                # 链状态摘要
     python chain.py export [--out chain.json]             # 导出发放用账本
@@ -196,6 +201,37 @@ def cmd_adopt(args):
     return 0
 
 
+def cmd_asset(args):
+    """分发资产上链：记录纳入共识分发的源头文件（ADD-only）。"""
+    ledger = load_ledger()
+    if not ledger["blocks"]:
+        print("账本为空，请先 init。", file=sys.stderr)
+        return 1
+    if not args.name or not args.sha:
+        print("资产记录须声明文件名与 SHA-256（不伪装齐备）。", file=sys.stderr)
+        return 1
+    top = last_block(ledger)
+    payload = {
+        "index": top["index"] + 1,
+        "type": "ASSET",
+        "date": args.date or now_iso()[:10],
+        "asset": args.name,
+        "sha256": args.sha,
+        "bytes": args.bytes or 0,
+        "document": args.document or "",
+        "issuer": ISSUER,
+        "nodes": args.nodes or [],
+        "notes": args.notes or "",
+        "timestamp": args.timestamp or now_iso(),
+        "prev_hash": top["hash"],
+    }
+    payload["hash"] = block_hash(payload)
+    ledger["blocks"].append(payload)
+    save_ledger(ledger)
+    print(f"资产区块 #{payload['index']} 已追加：{args.name} · hash={payload['hash'][:32]}…")
+    return 0
+
+
 def cmd_verify(_args):
     ledger = load_ledger()
     errors = verify_chain(ledger)
@@ -207,8 +243,10 @@ def cmd_verify(_args):
         return 1
     print(f"链完整性验证通过：{n} 区块，哈希链无断裂、无篡改。")
     for blk in ledger["blocks"]:
-        tag = "RELEASE" if blk["type"] == "RELEASE" else f"ADOPTION({blk.get('adopted_by')})"
-        print(f"  #{blk['index']:>3} {tag:<28} {blk.get('version', ''):<6} {blk.get('date', '')}  {blk['hash'][:16]}…")
+        tag = {"RELEASE": "RELEASE", "ASSET": "ASSET"}.get(
+            blk["type"], f"ADOPTION({blk.get('adopted_by')})")
+        extra = f" · {blk['asset']}" if blk["type"] == "ASSET" else ""
+        print(f"  #{blk['index']:>3} {tag:<28} {blk.get('version', ''):<6} {blk.get('date', '')}  {blk['hash'][:16]}…{extra}")
     return 0
 
 
@@ -221,7 +259,8 @@ def cmd_status(_args):
     top = last_block(ledger)
     releases = [b for b in ledger["blocks"] if b["type"] == "RELEASE"]
     adoptions = [b for b in ledger["blocks"] if b["type"] == "ADOPTION"]
-    print(f"consensus-chain · {n} 区块 · {len(releases)} 发布 · {len(adoptions)} 采纳")
+    assets = [b for b in ledger["blocks"] if b["type"] == "ASSET"]
+    print(f"consensus-chain · {n} 区块 · {len(releases)} 发布 · {len(adoptions)} 采纳 · {len(assets)} 资产")
     print(f"链头：#{top['index']} hash={top['hash']}")
     print(f"最新发布版本：{releases[-1]['version']}（{releases[-1]['date']}）")
     return 0
@@ -261,6 +300,15 @@ def main():
     p_ad.add_argument("--note", default="")
     p_ad.add_argument("--date", default="")
     p_ad.add_argument("--timestamp", default="")
+    p_as = sub.add_parser("asset", help="追加分发资产区块（如总典 PDF 母典本体）")
+    p_as.add_argument("--name", required=True)
+    p_as.add_argument("--sha", required=True)
+    p_as.add_argument("--bytes", type=int, default=0)
+    p_as.add_argument("--document", default="")
+    p_as.add_argument("--date", default="")
+    p_as.add_argument("--nodes", nargs="*", default=[])
+    p_as.add_argument("--notes", default="")
+    p_as.add_argument("--timestamp", default="")
     sub.add_parser("verify")
     sub.add_parser("status")
     p_ex = sub.add_parser("export")
@@ -268,6 +316,7 @@ def main():
     args = ap.parse_args()
     return {
         "init": cmd_init, "add": cmd_add, "adopt": cmd_adopt,
+        "asset": cmd_asset,
         "verify": cmd_verify, "status": cmd_status, "export": cmd_export,
     }[args.cmd](args)
 
